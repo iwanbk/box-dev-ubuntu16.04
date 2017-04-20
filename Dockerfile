@@ -1,7 +1,8 @@
 FROM ubuntu:16.04
 MAINTAINER Iwan Budi Kusnanto <iwanbk@gmail.com>
 RUN apt-get update -y	&& \
-	apt-get install -y vim build-essential mercurial git cmake ctags pkg-config vim-nox wget curl apt-utils autoconf libtool && \
+	apt-get install -y vim build-essential mercurial git cmake ctags pkg-config vim-nox apt-utils autoconf libtool && \
+	apt-get install -y wget curl iputils-ping tmux && \
 
 	# vim
 	cd && \
